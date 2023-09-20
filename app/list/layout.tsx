@@ -1,7 +1,7 @@
-import { AppBar, Box, IconButton } from '@mui/material';
+import { AppBar, Badge, Box, IconButton } from '@mui/material';
 import React from 'react';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { NextPage } from 'next';
+import ShoppingCartIcon from '@/shared/components/ShoppingCartIcon';
 
 type Props = {
   children: React.ReactNode;
@@ -14,7 +14,7 @@ const ListLayout: NextPage<Props> = ({ children }) => {
         <AppBar position="static">
           <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
             <IconButton color="primary" aria-label="add to shopping cart">
-              <ShoppingCartIcon sx={{ color: 'white' }} />
+              <ShoppingCartIcon />
             </IconButton>
           </Box>
         </AppBar>

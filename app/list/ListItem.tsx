@@ -2,6 +2,7 @@ import { Food } from '@/shared/types/Food';
 import { Card } from '@mui/material';
 import styles from './ListItem.module.css';
 import { NextComponentType } from 'next';
+import AddToCart from '@/shared/components/AddToCart';
 
 type Props = {
   food: Food;
@@ -20,6 +21,7 @@ export default function ListItem({ food }: Props): React.ReactNode {
     >
       <div>{food.title}</div>
       <div>{food.price}</div>
+      <AddToCart id={food.id + ''} />
     </Card>
   );
 }
