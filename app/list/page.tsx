@@ -14,7 +14,7 @@ export default async function ListPage() {
   const foods = await fetchFood();
   return (
     <>
-      <div>
+      <div data-testid="container">
         {foods.map((food) => (
           <ListItem food={food} key={food.id} />
         ))}
