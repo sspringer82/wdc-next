@@ -1,5 +1,6 @@
 import { Food } from '@/shared/types/Food';
 import ListItem from './ListItem';
+import Link from 'next/link';
 
 async function fetchFood(): Promise<Food[]> {
   const response = await fetch('http://localhost:3001/foods');
@@ -18,6 +19,7 @@ export default async function ListPage() {
           <ListItem food={food} key={food.id} />
         ))}
       </div>
+      <Link href="/cart">zum Warenkorb</Link>
     </>
   );
 }

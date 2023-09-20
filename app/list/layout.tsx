@@ -14,12 +14,14 @@ import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useCartAmount } from '@/shared/components/useCart';
 import ShoppingCartIcon from '@/shared/components/ShoppingCartIcon';
+import { useRouter } from 'next/navigation';
 
 export default function ListLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const router = useRouter();
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = (open: boolean) => {
@@ -46,7 +48,11 @@ export default function ListLayout({
             >
               <MenuIcon />
             </IconButton>
-            <IconButton color="inherit" aria-label="add to shopping cart">
+            <IconButton
+              color="inherit"
+              aria-label="add to shopping cart"
+              onClick={() => router.push('/cart')}
+            >
               <ShoppingCartIcon />
             </IconButton>
           </Box>

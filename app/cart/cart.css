@@ -1,0 +1,7 @@
+.formRow {
+  margin: 5px 0;
+}
+
+.formRow :first-child {
+  margin-right: 20px;
+}
