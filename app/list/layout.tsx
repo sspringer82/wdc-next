@@ -1,26 +1,72 @@
-import { AppBar, Badge, Box, IconButton } from '@mui/material';
-import React from 'react';
-import { NextPage } from 'next';
+'use client';
+
+import {
+  AppBar,
+  Badge,
+  Box,
+  Drawer,
+  IconButton,
+  Link,
+  List,
+  ListItem,
+} from '@mui/material';
+import React, { useState } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
+import { useCartAmount } from '@/shared/components/useCart';
 import ShoppingCartIcon from '@/shared/components/ShoppingCartIcon';
 
-type Props = {
+export default function ListLayout({
+  children,
+}: {
   children: React.ReactNode;
-};
+}) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
-const ListLayout: NextPage<Props> = ({ children }) => {
+  const toggleDrawer = (open: boolean) => {
+    setDrawerOpen(open);
+  };
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
-          <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <IconButton color="primary" aria-label="add to shopping cart">
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              padding: 2,
+            }}
+          >
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={() => toggleDrawer(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+            <IconButton color="inherit" aria-label="add to shopping cart">
               <ShoppingCartIcon />
             </IconButton>
           </Box>
         </AppBar>
+        <Drawer
+          anchor="left"
+          open={drawerOpen}
+          onClose={() => toggleDrawer(false)}
+        >
+          <List>
+            <ListItem key="List">
+              <Link href="/list">List</Link>
+            </ListItem>
+            <ListItem key="Products">
+              <Link href="/list/products">Products</Link>
+            </ListItem>
+          </List>
+        </Drawer>
       </Box>
       <section>{children}</section>
     </>
   );
-};
-export default ListLayout;
+}

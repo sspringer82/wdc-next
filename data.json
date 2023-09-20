@@ -121,5 +121,40 @@
       "price": "2.49"
     }
   ],
-  "checkout": []
+  "checkout": [
+    {
+      "customer": {
+        "firstname": "sdfg",
+        "lastname": "sdfg",
+        "street": "sdfg",
+        "zip": "sdfg",
+        "city": "sdfg",
+        "country": "sdfg"
+      },
+      "cart": [
+        {
+          "id": 1,
+          "title": "Pizza",
+          "price": "9.99",
+          "amount": 1,
+          "sum": 9.99
+        },
+        {
+          "id": 1,
+          "title": "Pizza",
+          "price": "9.99",
+          "amount": 1,
+          "sum": 9.99
+        },
+        {
+          "id": 2,
+          "title": "Burger",
+          "price": "8.99",
+          "amount": 5,
+          "sum": 44.95
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
