@@ -1,4 +1,5 @@
 import { Food } from '@/shared/types/Food';
+import ListItem from './ListItem';
 
 async function fetchFood(): Promise<Food[]> {
   const response = await fetch('http://localhost:3001/foods');
@@ -10,12 +11,11 @@ async function fetchFood(): Promise<Food[]> {
 
 export default async function ListPage() {
   const foods = await fetchFood();
-
   return (
     <>
       <div>
         {foods.map((food) => (
-          <div key={food.id}>{food.title}</div>
+          <ListItem food={food} key={food.id} />
         ))}
       </div>
     </>
