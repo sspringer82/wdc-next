@@ -1,0 +1,125 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "title": "Pizza",
+      "description": "Delicious Italian pizza with tomato sauce and cheese",
+      "price": "9.99"
+    },
+    {
+      "id": 2,
+      "title": "Burger",
+      "description": "Juicy beef burger with lettuce and tomato",
+      "price": "8.99"
+    },
+    {
+      "id": 3,
+      "title": "Sushi",
+      "description": "Fresh sushi rolls with rice, fish, and vegetables",
+      "price": "12.99"
+    },
+    {
+      "id": 4,
+      "title": "Pasta",
+      "description": "Italian pasta with garlic, olive oil, and chili flakes",
+      "price": "7.99"
+    },
+    {
+      "id": 5,
+      "title": "Salad",
+      "description": "Fresh mixed greens with your choice of dressing",
+      "price": "5.99"
+    },
+    {
+      "id": 6,
+      "title": "Ramen",
+      "description": "Japanese noodle soup with pork and vegetables",
+      "price": "10.99"
+    },
+    {
+      "id": 7,
+      "title": "Tacos",
+      "description": "Mexican tacos filled with beef and vegetables",
+      "price": "6.99"
+    },
+    {
+      "id": 8,
+      "title": "Fish & Chips",
+      "description": "Fried fish with a side of potato chips",
+      "price": "11.99"
+    },
+    {
+      "id": 9,
+      "title": "Curry",
+      "description": "Spicy Indian curry with chicken and vegetables",
+      "price": "13.99"
+    },
+    {
+      "id": 10,
+      "title": "Steak",
+      "description": "Grilled beef steak with a side of vegetables",
+      "price": "19.99"
+    },
+    {
+      "id": 11,
+      "title": "Noodles",
+      "description": "Stir-fried noodles with shrimp and vegetables",
+      "price": "9.99"
+    },
+    {
+      "id": 12,
+      "title": "Soup",
+      "description": "Hot vegetable soup with a blend of herbs",
+      "price": "4.99"
+    },
+    {
+      "id": 13,
+      "title": "Sandwich",
+      "description": "Turkey and cheese sandwich with lettuce and mayo",
+      "price": "6.99"
+    },
+    {
+      "id": 14,
+      "title": "Rice",
+      "description": "Steamed rice with a side of grilled chicken",
+      "price": "8.99"
+    },
+    {
+      "id": 15,
+      "title": "Pancakes",
+      "description": "Fluffy pancakes served with maple syrup and butter",
+      "price": "7.99"
+    },
+    {
+      "id": 16,
+      "title": "Fried Chicken",
+      "description": "Crispy fried chicken with a side of coleslaw",
+      "price": "11.99"
+    },
+    {
+      "id": 17,
+      "title": "Hot Dog",
+      "description": "Classic hot dog with mustard and ketchup",
+      "price": "3.99"
+    },
+    {
+      "id": 18,
+      "title": "Smoothie",
+      "description": "Refreshing fruit smoothie with a blend of berries",
+      "price": "4.99"
+    },
+    {
+      "id": 19,
+      "title": "Coffee",
+      "description": "Freshly brewed coffee served hot or iced",
+      "price": "2.99"
+    },
+    {
+      "id": 20,
+      "title": "Tea",
+      "description": "Hot or iced tea with your choice of flavor",
+      "price": "2.49"
+    }
+  ],
+  "checkout": []
+}
